@@ -1,2 +1,7 @@
 # task-2-faq-accordion-card
-Task 2 for Internship work. This project is supposed to be an FAQ type page for an imaginary  website.
+
+Task 2 for Internship work. This project is supposed to be an FAQ type page for an imaginary website.
+
+## Subheader
+
+This is a subheader for all changes
