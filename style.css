@@ -4,37 +4,52 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(#b068e9, #6463e7);
+}
+
 div {
-  border: 1px solid orangered;
+  /* border: 1px solid orangered; */
 }
 
 h1 {
-  border: 2px solid darkblue;
+  /* border: 2px solid darkblue; */
 }
 
 p {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 img {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .container {
   /* max-width: 920px; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   height: auto;
-  margin: 145px auto auto;
+  width: 327px;
+  margin: 145px auto 30px;
   display: flex;
   flex: 0 0 auto;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  background-color: yellow;
+  background-color: #ffffff;
+  border-radius: 23px;
+}
+
+.container-faq {
+  width: 100%;
 }
 
 .container-img {
   position: relative;
+  /* background-color: red; */
+  height: 132px;
+  width: 100%;
+  text-align: center;
 }
 
 .container-img-box {
@@ -45,25 +60,34 @@ img {
 .container-img-shadow {
   z-index: 0;
   position: absolute;
+  left: 40px;
 }
 
 .container-img-woman {
   z-index: 1;
   position: absolute;
+  left: 12px;
+  top: -110px;
 }
 
 .container-question-pointer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .container-questions-answers {
   display: flex;
   flex-direction: column;
   gap: 17px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 48px;
 }
 
 .container-question-answer {
+  border-bottom: 1px solid #e8e8ea;
+  min-height: 35px;
 }
 
 .answer {
@@ -71,10 +95,44 @@ img {
 }
 
 .header-faq {
+  color: #1e1f36;
   text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
 }
 
 .pointer {
-  width: 20px;
-  height: auto;
+  width: 8px;
+  height: 4px;
+}
+
+.question {
+  color: #4b4c5f;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 920px) {
+  .container {
+    width: 920px;
+    flex-direction: row;
+  }
+
+  .container-img-woman {
+    -moz-box-sizing: border-box;
+    background: url(images/illustration-woman-online-desktop.svg) no-repeat;
+    width: 472px;
+    height: 359px;
+  }
+
+  .container-img-box {
+    display: block;
+  }
+
+  .container-img-shadow {
+  }
 }
