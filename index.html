@@ -22,7 +22,7 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: #ffffff;
       }
     </style>
 
@@ -44,103 +44,147 @@
     <div class="container">
       <div class="container-img">
         <img
-          src="images/illustration-woman-online-mobile.svg"
-          alt="Woman interacting with a screen"
-          class="container-img-woman"
+          src="images/illustration-woman-online-desktop.svg"
+          alt="Woman interacting with screen"
+          class="container-img-woman-desktop"
         />
         <img
-          src="images/illustration-box-desktop.svg"
-          alt="Box with @ symbol on top"
-          class="container-img-box"
+          src="images/illustration-woman-online-mobile.svg"
+          alt="Woman interacting with screen"
+          class="container-img-woman-mobile"
         />
+
         <img
           src="images/bg-pattern-mobile.svg"
           alt="Backdrop shadow"
-          class="container-img-shadow"
+          class="container-img-shadow-mobile"
+        />
+        <img
+          src="images/bg-pattern-desktop.svg"
+          alt="Backdrop shadow"
+          class="container-img-shadow-desktop"
         />
       </div>
+
       <div class="container-faq">
         <h1 class="header-faq">FAQ</h1>
         <div class="container-questions-answers">
-          <div class="container-question-answer">
+          <div
+            class="container-question-answer"
+            onclick="showAnswerOne('answer-one', 'question-one', 'pointer-one')"
+          >
             <div class="container-question-pointer">
-              <p class="question">How many team members can I invite?</p>
+              <p id="question-one" class="question">
+                How many team members can I invite?
+              </p>
               <img
+                id="pointer-one"
                 src="images/icon-arrow-down.svg"
                 alt="Arrow pointing vertically"
                 class="pointer"
               />
             </div>
-            <p class="answer">
+            <p id="answer-one" class="answer">
               You can invite up to 2 additional users on the Free plan. There is
               no limit on team members for the Premium plan.
             </p>
           </div>
-          <div class="container-question-answer">
+          <div
+            class="container-question-answer"
+            onclick="showAnswerOne('answer-two', 'question-two', 'pointer-two')"
+          >
             <div class="container-question-pointer">
-              <p class="question">What is the maximum file upload size?</p>
+              <p id="question-two" class="question">
+                What is the maximum file upload size?
+              </p>
               <img
+                id="pointer-two"
                 src="images/icon-arrow-down.svg"
                 alt="Arrow pointing vertically"
                 class="pointer"
               />
             </div>
-            <p class="answer">
+            <p id="answer-two" class="answer">
               No more than 2GB. All files in your account must fit your allotted
               storage space.
             </p>
           </div>
-          <div class="container-question-answer">
+          <div
+            class="container-question-answer"
+            onclick="showAnswerOne('answer-three', 'question-three', 'pointer-three')"
+          >
             <div class="container-question-pointer">
-              <p class="question">How do I reset my password?</p>
+              <p id="question-three" class="question">
+                How do I reset my password?
+              </p>
               <img
+                id="pointer-three"
                 src="images/icon-arrow-down.svg"
                 alt="Arrow pointing vertically"
                 class="pointer"
               />
             </div>
-            <p class="answer">
+            <p id="answer-three" class="answer">
               Click “Forgot password” from the login page or “Change password”
               from your profile page. A reset link will be emailed to you.
             </p>
           </div>
-          <div class="container-question-answer">
+          <div
+            class="container-question-answer"
+            onclick="showAnswerOne('answer-four', 'question-four', 'pointer-four')"
+          >
             <div class="container-question-pointer">
-              <p class="question">Can I cancel my subscription?</p>
+              <p id="question-four" class="question">
+                Can I cancel my subscription?
+              </p>
               <img
+                id="pointer-four"
                 src="images/icon-arrow-down.svg"
                 alt="Arrow pointing vertically"
                 class="pointer"
               />
             </div>
-            <p class="answer">
-              Yes! Send us a message and we’ll process your request no questions
+            <p id="answer-four" class="answer">
+              Yes! Send us a message and we'll process your request no questions
               asked.
             </p>
           </div>
-          <div class="container-question-answer">
+          <div
+            class="container-question-answer"
+            onclick="showAnswerOne('answer-five', 'question-five', 'pointer-five')"
+          >
             <div class="container-question-pointer">
-              <p class="question">Do you provide additional support?</p>
+              <p id="question-five" class="question">
+                Do you provide additional support?
+              </p>
               <img
+                id="pointer-five"
                 src="images/icon-arrow-down.svg"
                 alt="Arrow pointing vertically"
                 class="pointer"
               />
             </div>
-            <p class="answer">
+            <p id="answer-five" class="answer">
               Chat and email support is available 24/7. Phone lines are open
               during normal business hours.
             </p>
           </div>
         </div>
       </div>
+      <img
+        src="images/illustration-box-desktop.svg"
+        alt="Box with @ symbol on top"
+        class="container-img-box"
+      />
     </div>
 
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by <a href="https://github.com/nikolasubaric">Nikola Šubarić</a>.
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
